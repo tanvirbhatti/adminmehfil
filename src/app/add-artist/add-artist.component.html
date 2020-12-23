@@ -1,0 +1,14 @@
+<h1>Add Artist</h1>
+
+<form #addartists = "ngForm" (ngSubmit) = 'create(addartists.value)'>
+    <div class="form-group">
+      <label for="exampleFormControlInput1 mt-4">Artist name</label>
+      <input type="text" class="form-control" name='name' placeholder="enter artist name" ngModel ng-required ="true">
+      <label for="exampleFormControlInput1 mt-4">language</label>
+      <input type="text" class="form-control" name='language' placeholder="enter language" ngModel ng-required ="true">
+      <label for="exampleFormControlInput1 mt-4">picture url</label>
+      <input type="url" class="form-control" name='picUrl' placeholder="enter url" ngModel ng-required ="true">
+      <button type="submit" class="btn btn-primary mt-4">Submit</button>
+    </div>
+    
+  </form>
